@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* background-color: aqua; */
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: yellow;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2rem;
+    padding: 0 4rem;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-items div {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-items div a {
+    color: black;
+}
+
+.nav-items div:hover {
+    transition: 0.8s;
+    font-weight: bold;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.faded-text{
+    user-select: none;
+    font-size: 7rem;
+    color: rgb(231, 231,231);
+
+    bottom: -15%;
+    left: -5%;
+    font-weight: bold;
+    transition: all 3s;
+
+}
+
+.hero-section-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background-color: green;
+    gap: 2rem;
+}
+
+.hero-section-heading{
+    font-size: 35px;
+    color: rgb(149, 91, 204);
+    font-weight: 500;
+}
+
+.hero-section-subhead{
+    font-size: 45px;
+    line-height: 45px;
+}
+.hero-section-desc{
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+}
+
+
+
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+.hero-section-right{
+    display: flex;
+}
+
+.photograph{
+    width: 50px;
+}
