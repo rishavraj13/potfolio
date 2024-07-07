@@ -60,8 +60,16 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    background-color: red;
+
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem ;
+    padding-bottom: 8rem;
 }
+
+
+
 
 .faded-text{
     user-select: none;
@@ -97,7 +105,7 @@ a {
     margin-top: 1rem;
     width: 70%;
     font-weight: 500;
-}
+} 
 
 
 
@@ -172,9 +180,11 @@ a {
 
 
 .hero-section-right{
-    display: flex;
+    position: relative;
+}
+.photograph{
+    width: 150;
+    height: 120px;
+    background-color:darkblue;
 }
 
-.photograph{
-    width: 50px;
-}
