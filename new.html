@@ -23,25 +23,73 @@
             font-family: "poppins", sans-serif;
         }
 
-        nav{    
+        nav {
             display: flex;
             align-items: center;
             justify-content: space-around;
-            background-color: #3131a6;
-        
+            background-color: #202087;
+
             height: 50px;
         }
-        .navright{
+
+        .navright {
             display: flex;
             justify-content: center;
-            background-color: green;
+
+            /* background-color: green; */
         }
-        .x{
+
+        .x {
             list-style: none;
             margin: 0 23px;
         }
-        .left{
+
+        .x a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .x a:hover {
+            color: rgb(215, 172, 186);
+            font-size: 1.1rem;
+        }
+
+        .left {
             font-size: 2.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 30%;
+            /* background-color: bisque; */
+        }
+
+        .leftsection {
+            /* background-color: brown; */
+            font-size: 2rem;
+            margin: 75px;
+
+        }
+
+        .rightsection img {
+            width: 110%;
+
+            margin: -1px 5px;
+        }
+
+        .name {
+            color: rgb(149, 67, 225)
+        }
+
+        .intro {
+            width: 30rem;
+            font-size: 1.5rem;
+            /* background-color: antiquewhite; */
         }
     </style>
 </head>
@@ -52,16 +100,25 @@
             <div class="left">RISHAV's WEBSITE</div>
             <div class="right">
                 <ul class="navright">
-                    <li class="x">HOME</li>
-                    <li class="x">ABOUT</li>
-                    <li class="x">SKILLS</li>
-                    <li class="x">CONTACT</li>
+                    <li class="x"><a href="/">HOME</a></li>
+                    <li class="x"><a href="/">ABOUT</a></li>
+                    <li class="x"><a href="/">SKILLS</a></li>
+                    <li class="x"><a href="/">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        
+        <section class="firstsection">
+            <div class="leftsection">Hi! I'm <span class="name">Rishav...</span>
+                <div class="intro">
+                    Certainly! Becoming a web developer.
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="3d-website-developer-working-on-laptop-illustration-png.webp" alt="">
+            </div>
+        </section>
     </main>
 </body>
 
